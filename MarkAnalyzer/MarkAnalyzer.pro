@@ -24,14 +24,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-CONFIG += c++11
+HEADERS += \
+    Controllers/mainwindow.h \
+    Views/imageview.h \
+    Views/imageviewmode.h \
+    Views/waitingspinnerwidget.h \
+    Common/consts.h \
+    Common/currentappstate.h \
+    Common/magic.h \
+    Common/settingsstorage.h \
+    Models/seriamodel.h \
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+    Controllers/mainwindow.cpp \
+    Views/imageview.cpp \
+    Views/waitingspinnerwidget.cpp \
+    Common/currentappstate.cpp \
+    Common/settingsstorage.cpp \
+    Models/seriamodel.cpp \
 
-HEADERS += \
-        mainwindow.h
 
 FORMS += \
         mainwindow.ui
