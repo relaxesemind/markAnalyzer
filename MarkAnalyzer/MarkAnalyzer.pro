@@ -34,6 +34,13 @@ HEADERS += \
     Common/magic.h \
     Common/settingsstorage.h \
     Models/seriamodel.h \
+    Common/staticstorage.h \
+    Models/markmodel.h \
+    Models/energymarkmodel.h \
+    Models/inertiamomentmarkmodel.h \
+    Models/entropymarkmodel.h \
+    Models/localuniformitymarkmodel.h \
+    Models/markmodels.h
 
 SOURCES += \
         main.cpp \
@@ -43,6 +50,12 @@ SOURCES += \
     Common/currentappstate.cpp \
     Common/settingsstorage.cpp \
     Models/seriamodel.cpp \
+    Common/staticstorage.cpp \
+    Models/markmodel.cpp \
+    Models/energymarkmodel.cpp \
+    Models/inertiamomentmarkmodel.cpp \
+    Models/entropymarkmodel.cpp \
+    Models/localuniformitymarkmodel.cpp
 
 
 FORMS += \
