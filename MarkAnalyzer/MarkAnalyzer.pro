@@ -40,7 +40,8 @@ HEADERS += \
     Models/inertiamomentmarkmodel.h \
     Models/entropymarkmodel.h \
     Models/localuniformitymarkmodel.h \
-    Models/markmodels.h
+    Models/markmodels.h \
+    Managers/appinitializator.h
 
 SOURCES += \
         main.cpp \
@@ -55,7 +56,8 @@ SOURCES += \
     Models/energymarkmodel.cpp \
     Models/inertiamomentmarkmodel.cpp \
     Models/entropymarkmodel.cpp \
-    Models/localuniformitymarkmodel.cpp
+    Models/localuniformitymarkmodel.cpp \
+    Managers/appinitializator.cpp
 
 
 FORMS += \
