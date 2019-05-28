@@ -1,7 +1,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "Managers/appinitializator.h"
+
 #include <QMainWindow>
+#include <QThreadPool>
 
 namespace Ui {
 class MainWindow;
@@ -16,7 +19,11 @@ public:
     ~MainWindow();
 
 private:
+    void setupUI();
+
+private:
     Ui::MainWindow *ui;
+    QThreadPool threadPool;
 };
 
 #endif // MAINWINDOW_H

@@ -1,6 +1,12 @@
 #include "appinitializator.h"
 
-AppInitializator::AppInitializator(QObject *parent) : QObject(parent)
+void AppInitializator::setupApplication()
 {
-
+    auto& marks = StaticStorage::shared().marks;
+    marks = {
+        EnergyMarkModel(),
+        EntropyMarkModel(),
+        InertiaMomentMarkModel(),
+        LocalUniformityMarkModel()
+    };
 }

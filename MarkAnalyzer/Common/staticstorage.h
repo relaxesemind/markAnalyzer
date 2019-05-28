@@ -1,6 +1,7 @@
 #ifndef STATICSTORAGE_H
 #define STATICSTORAGE_H
 
+#include "Models/markmodels.h"
 
 #include <QString>
 #include <QVector>
@@ -24,9 +25,7 @@ private:
 
 public:
    QVector<QImage> badImages, goodImages;
-
-
-
+   QVector<MarkModel> marks;
 };
 
 #endif // STATICSTORAGE_H

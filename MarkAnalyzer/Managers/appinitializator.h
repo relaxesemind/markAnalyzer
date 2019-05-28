@@ -2,19 +2,26 @@
 #define APPINITIALIZATOR_H
 
 
-#include <QObject>
+#include "Models/markmodels.h"
+#include "Common/staticstorage.h"
+#include "Common/settingsstorage.h"
 
 
-class AppInitializator : public QObject
+class AppInitializator
 {
-    Q_OBJECT
 public:
-    explicit AppInitializator();
+    AppInitializator(AppInitializator const&) = delete;
+    AppInitializator& operator=(AppInitializator const&) = delete;
+    static AppInitializator& shared()
+    {
+        static AppInitializator instance;
+        return instance;
+    }
 
-signals:
-    void appDidInitialize(bool);
+private:
+    AppInitializator() = default;
 
-public slots:
+public:
     void setupApplication();
 };
 

@@ -15,7 +15,7 @@ public:
     }
 
 private:
-    SettingsStorage();
+    SettingsStorage() = default;
 
 public:
 
