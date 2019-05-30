@@ -20,7 +20,7 @@ public: //methods
     MarkModel() = default;
 
     virtual ~MarkModel(){}
-    virtual qreal function(const QImage &image, const QVector<QVector<bool> > &mask);
+    virtual qreal function(const QImage &image, const QVector<QVector<bool> > &mask = QVector<QVector<bool> >());
     virtual QString markName()const;
 
 public: //property

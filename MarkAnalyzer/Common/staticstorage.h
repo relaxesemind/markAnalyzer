@@ -2,6 +2,7 @@
 #define STATICSTORAGE_H
 
 #include "Models/markmodels.h"
+#include "Models/imagemodel.h"
 #include "Common/customtypes.h"
 
 #include <QString>
@@ -26,8 +27,13 @@ private:
     StaticStorage() = default;
 
 public:
-   QMap<ImageType,QVector<QImage>> images;
+   QMap<
+        ImageType,
+        QVector<ImageModel>
+       > images;
    QVector<pMarkModel> marks;
+
+
 };
 
 #endif // STATICSTORAGE_H

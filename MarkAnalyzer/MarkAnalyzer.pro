@@ -44,7 +44,9 @@ HEADERS += \
     Managers/appinitializator.h \
     core.h \
     Common/customtypes.h \
-    Models/maxprobabilitymarkmodel.h
+    Models/maxprobabilitymarkmodel.h \
+    Models/imagemodel.h \
+    Managers/markscalculatetask.h
 
 SOURCES += \
         main.cpp \
@@ -62,7 +64,9 @@ SOURCES += \
     Models/localuniformitymarkmodel.cpp \
     Managers/appinitializator.cpp \
     core.cpp \
-    Models/maxprobabilitymarkmodel.cpp
+    Models/maxprobabilitymarkmodel.cpp \
+    Models/imagemodel.cpp \
+    Managers/markscalculatetask.cpp
 
 
 FORMS += \

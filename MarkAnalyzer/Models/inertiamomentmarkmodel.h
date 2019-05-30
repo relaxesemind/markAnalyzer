@@ -7,7 +7,7 @@ class InertiaMomentMarkModel: public MarkModel
 {
 public:
     InertiaMomentMarkModel() = default;
-    virtual qreal function(const QImage &image, const QVector<QVector<bool> > &mask)override;
+    virtual qreal function(const QImage &image, const QVector<QVector<bool> > &mask = QVector<QVector<bool> >())override;
     virtual QString markName()const override;
 };
 

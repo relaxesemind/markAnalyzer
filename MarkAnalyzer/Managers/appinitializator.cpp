@@ -12,8 +12,4 @@ void AppInitializator::setupApplication()
         std::make_shared<LocalUniformityMarkModel>(),
         std::make_shared<MaxProbabilityMarkModel>()
     };
-
-    auto& images = StaticStorage::shared().images;
-    images.insert(ImageType::melanoma,{});
-    images.insert(ImageType::notMelanoma,{});
 }

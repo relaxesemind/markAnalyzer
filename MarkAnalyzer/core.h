@@ -19,6 +19,7 @@ signals:
 
 public slots:
         void loadImagesFromFolderPath(const QString& folderPath, ImageType type);
+        void calculateMarksForAllImages();
 
 
 private:
