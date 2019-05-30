@@ -16,13 +16,16 @@ using function_ = std::function<qreal (const QImage &image, const QVector<QVecto
 
 class MarkModel
 {
-public:
+public: //methods
     MarkModel() = default;
 
     virtual ~MarkModel(){}
     virtual qreal function(const QImage &image, const QVector<QVector<bool> > &mask);
-    virtual QString markName();
+    virtual QString markName()const;
 
+public: //property
+
+    int rate;
 
 protected:
    adjacencyMatrix_ getAdjacencyMatrix(const QImage& image);

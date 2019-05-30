@@ -5,5 +5,6 @@
 #include "Models/entropymarkmodel.h"
 #include "Models/inertiamomentmarkmodel.h"
 #include "Models/localuniformitymarkmodel.h"
+#include "Models/maxprobabilitymarkmodel.h"
 
 #endif // MARKMODELS_H

@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui charts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -41,7 +41,10 @@ HEADERS += \
     Models/entropymarkmodel.h \
     Models/localuniformitymarkmodel.h \
     Models/markmodels.h \
-    Managers/appinitializator.h
+    Managers/appinitializator.h \
+    core.h \
+    Common/customtypes.h \
+    Models/maxprobabilitymarkmodel.h
 
 SOURCES += \
         main.cpp \
@@ -57,7 +60,9 @@ SOURCES += \
     Models/inertiamomentmarkmodel.cpp \
     Models/entropymarkmodel.cpp \
     Models/localuniformitymarkmodel.cpp \
-    Managers/appinitializator.cpp
+    Managers/appinitializator.cpp \
+    core.cpp \
+    Models/maxprobabilitymarkmodel.cpp
 
 
 FORMS += \

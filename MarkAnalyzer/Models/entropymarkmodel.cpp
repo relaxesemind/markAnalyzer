@@ -14,7 +14,7 @@ qreal EntropyMarkModel::function(const QImage &image, const QVector<QVector<bool
     return -result;
 }
 
-QString EntropyMarkModel::markName()
+QString EntropyMarkModel::markName() const
 {
     return "ENT - Энтропия";
 }

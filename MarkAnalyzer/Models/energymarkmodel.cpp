@@ -8,13 +8,13 @@ qreal EnergyMarkModel::function(const QImage &image, const QVector<QVector<bool>
 
     this->adjMatrixForeach(g,[&](qreal value)
     {
-        result += value * value;
+        result += std::pow(value,2);
     });
 
     return result;
 }
 
-QString EnergyMarkModel::markName()
+QString EnergyMarkModel::markName() const
 {
     return "ASM - Энергия";
 }

@@ -2,11 +2,13 @@
 #define STATICSTORAGE_H
 
 #include "Models/markmodels.h"
+#include "Common/customtypes.h"
 
 #include <QString>
 #include <QVector>
 #include <QMap>
 #include <QImage>
+#include <memory>
 
 
 class StaticStorage
@@ -21,11 +23,11 @@ public:
     }
 
 private:
-    StaticStorage();
+    StaticStorage() = default;
 
 public:
-   QVector<QImage> badImages, goodImages;
-   QVector<MarkModel> marks;
+   QMap<ImageType,QVector<QImage>> images;
+   QVector<pMarkModel> marks;
 };
 
 #endif // STATICSTORAGE_H

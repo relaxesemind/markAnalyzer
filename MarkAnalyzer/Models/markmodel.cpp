@@ -11,7 +11,7 @@ qreal MarkModel::function(const QImage &image, const QVector<QVector<bool> > &ma
     return 0.0;
 }
 
-QString MarkModel::markName()
+QString MarkModel::markName() const
 {
     return "default mark";
 }

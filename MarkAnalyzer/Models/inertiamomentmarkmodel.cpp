@@ -9,13 +9,13 @@ qreal InertiaMomentMarkModel::function(const QImage &image, const QVector<QVecto
     for (int i = 0; i < g.size(); ++i)
         for (int j = 0; j < g.size(); ++j)
         {
-            result += ( i - j ) * ( i - j ) * g[i][j];
+            result += std::pow(i - j, 2) * g[i][j];
         }
 
     return result;
 }
 
-QString InertiaMomentMarkModel::markName()
+QString InertiaMomentMarkModel::markName() const
 {
     return "CON - Момент инерции";
 }

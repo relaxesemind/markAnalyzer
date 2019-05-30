@@ -15,7 +15,7 @@ qreal LocalUniformityMarkModel::function(const QImage &image, const QVector<QVec
     return result;
 }
 
-QString LocalUniformityMarkModel::markName()
+QString LocalUniformityMarkModel::markName() const
 {
     return "LUN - Локальная однородность";
 }
