@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include "Managers/appinitializator.h"
+#include "Views/waitingspinnerwidget.h"
 
 #include <QMainWindow>
 #include <QThreadPool>
@@ -27,6 +28,8 @@ private slots:
 
     void on_action_2_triggered();
 
+    void on_pushButton_5_clicked();
+
 private:
     void setupUI();
     void loadNormalImages();
@@ -34,7 +37,8 @@ private:
 
 private:
     Ui::MainWindow *ui;
-    QThreadPool threadPool;
+    QThreadPool *threadPool;
+    WaitingSpinnerWidget *spinner;
 };
 
 #endif // MAINWINDOW_H

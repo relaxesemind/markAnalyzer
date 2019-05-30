@@ -7,7 +7,6 @@ void AppInitializator::setupApplication()
     marks = {
         std::make_shared<EnergyMarkModel>(),
         std::make_shared<EntropyMarkModel>(),
-        std::make_shared<EntropyMarkModel>(),
         std::make_shared<InertiaMomentMarkModel>(),
         std::make_shared<LocalUniformityMarkModel>(),
         std::make_shared<MaxProbabilityMarkModel>()

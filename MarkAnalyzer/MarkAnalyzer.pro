@@ -46,7 +46,8 @@ HEADERS += \
     Common/customtypes.h \
     Models/maxprobabilitymarkmodel.h \
     Models/imagemodel.h \
-    Managers/markscalculatetask.h
+    Managers/markscalculatetask.h \
+    Models/shapefactormarkmodel.h
 
 SOURCES += \
         main.cpp \
@@ -66,7 +67,8 @@ SOURCES += \
     core.cpp \
     Models/maxprobabilitymarkmodel.cpp \
     Models/imagemodel.cpp \
-    Managers/markscalculatetask.cpp
+    Managers/markscalculatetask.cpp \
+    Models/shapefactormarkmodel.cpp
 
 
 FORMS += \
