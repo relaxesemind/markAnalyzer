@@ -6,5 +6,6 @@
 #include "Models/inertiamomentmarkmodel.h"
 #include "Models/localuniformitymarkmodel.h"
 #include "Models/maxprobabilitymarkmodel.h"
+#include "Models/shapefactormarkmodel.h"
 
 #endif // MARKMODELS_H

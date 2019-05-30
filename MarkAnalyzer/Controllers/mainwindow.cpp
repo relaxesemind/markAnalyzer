@@ -124,7 +124,7 @@ void MainWindow::on_pushButton_5_clicked()//MAIN ACTION
               return;
           }
 
-          // update UI
+         #warning TODO - Update UI (graphics View)
       });
 
     threadPool->start(task);
