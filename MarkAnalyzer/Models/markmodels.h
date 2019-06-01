@@ -7,5 +7,6 @@
 #include "Models/localuniformitymarkmodel.h"
 #include "Models/maxprobabilitymarkmodel.h"
 #include "Models/shapefactormarkmodel.h"
+#include "Models/areamarkmodel.h"
 
 #endif // MARKMODELS_H

@@ -10,6 +10,7 @@ void AppInitializator::setupApplication()
         std::make_shared<InertiaMomentMarkModel>(),
         std::make_shared<LocalUniformityMarkModel>(),
         std::make_shared<MaxProbabilityMarkModel>(),
+        std::make_shared<AreaMarkModel>(),
         std::make_shared<ShapeFactorMarkModel>()
     };
 }
